@@ -1,3 +1,4 @@
+#원본은 입력 받은 것을 바로 print문으로 직접 문자열을 출력하지만 변수에 할당된 문자열을 출력하는 방법으로 바꾸었고 어떤 번호를 눌러야 어디서 입력되는지 계속 보여주게함
 #두번 나오는 오류 수정
 ttt_list = [" " for _ in range(9)] + ["O", "X", 0]
 while not any([not ttt_list[int(check_index[0]) - 1] == " " and ttt_list[int(check_index[0]) - 1] == ttt_list[int(check_index[1]) - 1] and ttt_list[int(check_index[1]) - 1] == ttt_list[int(check_index[2]) - 1] for check_index in ["123", "456", "789", "147", "258", "369", "159", "357"]]):
